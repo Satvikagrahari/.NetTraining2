@@ -33,3 +33,27 @@
     
 
 
+// QUESTION M2
+// Element
+// Details
+// Topic
+// static methods, parameters, overloading, default/named args, ref/out/in/params, local functions, recursion, TryParse
+// Difficulty Level
+// Medium
+// Question ID
+// M2
+// Scenario Description
+// You are developing a console application for a library that needs to process book orders. The input is a comma-separated string of ISBNs, and you need to validate each one.
+// Programming Task / Question
+// Create a static method TryProcessOrder that accepts a string of comma-separated ISBNs using the params keyword. The method should attempt to parse each ISBN (using a simple TryParse-like logic, e.g., checking if it's exactly 13 characters). You must use the out parameter to return a list of valid ISBNs. Describe how you would handle the parsing logic using TryParse-style methods to avoid exceptions.
+// Expected Concepts Tested
+// params keyword, out parameters, TryParse pattern, method design for validation.
+// Input (if applicable)
+// TryProcessOrder("978-3-16-148410-0, 1234567890123, invalid-isbn, 978-1-4028-9462-6")
+// Expected Output / Behavior
+// Returns: true 
+// out list contains: ["9783161484100", "9781402894626"] 
+// Invalid entries are skipped without throwing exceptions. Each ISBN is validated using a TryParseISBN method that returns bool and uses out string for the cleaned version.
+
+
+
